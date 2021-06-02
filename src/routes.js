@@ -1,4 +1,5 @@
 import React from "react";
+import LogPage from "./app/pages/PrivatePages/log/LogPage";
 
 const Toaster = React.lazy(() => import('./app/conponents/notifications/toaster/Toaster'));
 const Tables = React.lazy(() => import('./app/conponents/base/tables/Tables'));
@@ -96,7 +97,8 @@ const routes = [
   { path: "/p404", name: "Page not found", component: Page404 },
   { path: "/p500", name: "Page not found", component: Page500 },
 
-  { path: "/GrapheLocation", name: "Graphe de location", component: GrapheLocation}
+  { path: "/GrapheLocation", name: "Graphe de location", component: GrapheLocation},
+  { path: "/Log", name: "Log", component: LogPage}
 
 ];
 
